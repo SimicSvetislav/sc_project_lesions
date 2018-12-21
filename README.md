@@ -1,2 +1,2 @@
 # sc_project_lesions
-Projekat iz predmeta Soft kompjuting čija je tema klasifikacija mladeža.
+Projekat iz predmeta Soft kompjuting čija je tema klasifikacija mladeža na osnovu njihovih slika.
