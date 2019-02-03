@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from skimage.measure import compare_ssim
 
 def preprocess(img):
@@ -50,6 +50,6 @@ def preprocessString(image):
     
     return preprocess(img)
     
-#out = preprocessString('images/ISIC_0025116.jpg')
+#out = preprocessString('images/ISIC_0024799.jpg')
 #plt.imshow(out, 'gray')
     

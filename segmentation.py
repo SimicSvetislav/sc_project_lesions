@@ -13,7 +13,7 @@ def segment(img):
 
     ret, img_bin = cv2.threshold(out, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     
-    img_ret, contours, hierarchy = cv2.findContours(img_bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(img_bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
     
     largestContour = max(contours, key = cv2.contourArea)
     
