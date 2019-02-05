@@ -8,6 +8,8 @@ import importlib
 
 def border_feature(image):
     
+    importlib.reload(sg)
+    
     out_contour = sg.segment(image)
 
     img_copy = image.copy()
@@ -28,5 +30,16 @@ def border_feature_string(image):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     
     return border_feature(img)
+
+def border_pipe(in_contour):
+      
+    hull = cv2.convexHull(in_contour, returnPoints=True)
+    
+    countour_area = cv2.contourArea(in_contour);
+    hull_area = cv2.contourArea(hull)
+    
+    B = countour_area / hull_area
+    
+    return B
     
     

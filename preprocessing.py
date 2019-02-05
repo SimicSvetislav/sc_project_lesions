@@ -15,22 +15,23 @@ def preprocess(img):
     (score, img_diff) = compare_ssim(img_eroded, img_gray, full=True)
     
     img_diff = (img_diff * 255).astype("uint8")
-    print(img_diff.dtype)
+    #print(img_diff.dtype)
     
     mask_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3,3))
 
     img_dilated_mask = cv2.dilate(img_diff, mask_kernel, iterations=3)
-    img_eroded_mask = cv2.erode(img_dilated_mask, mask_kernel, iterations=3)
+    img_eroded_mask = cv2.erode(img_dilated_mask, mask_kernel, iterations=5)
     
     ret, img_bin_mask = cv2.threshold(img_eroded_mask, 0, 255, cv2.THRESH_OTSU)
     img_bin_mask_inv = cv2.bitwise_not(img_bin_mask)
     
-    img_copy_gray = np.copy(img_gray)
+    #img_copy_gray = np.copy(img_gray)
+    img_copy_gray = img_gray
     img_copy_gray[img_bin_mask==0] = 0
     
     img_ip_gray = cv2.inpaint(img_copy_gray,img_bin_mask_inv,3,cv2.INPAINT_TELEA)
     
-    ksize = 5
+    ksize = 15
 
     img_final_g = cv2.medianBlur(img_ip_gray, ksize)
     
@@ -50,6 +51,6 @@ def preprocessString(image):
     
     return preprocess(img)
     
-#out = preprocessString('images/ISIC_0024799.jpg')
+#out = preprocessString('images/ISIC_0024779.jpg')
 #plt.imshow(out, 'gray')
     
