@@ -1420,3 +1420,167 @@ Validation accuracy:  0.7925117004680188
 SVM
 Train accuracy:  0.7910247823174816
 Validation accuracy:  0.7925117004680188
+
+SVM
+Train accuracy:  0.7930341594105828
+Validation accuracy:  0.7800312012480499
+
+SVM
+Train accuracy:  0.7896851975887474
+Validation accuracy:  0.7956318252730109
+
+SVM
+Train accuracy:  0.7903549899531145
+Validation accuracy:  0.797191887675507
+
+SVM
+Train accuracy:  0.8017414601473544
+Validation accuracy:  0.7800312012480499
+
+SVM
+Train accuracy:  0.7937039517749498
+Validation accuracy:  0.7800312012480499
+
+SVM
+Train accuracy:  0.7950435365036839
+Validation accuracy:  0.7800312012480499
+
+SVM
+Train accuracy:  0.7937039517749498
+Validation accuracy:  0.7940717628705148
+
+SVM
+Train accuracy:  0.7910247823174816
+Validation accuracy:  0.7987519500780031
+
+SVM
+Train accuracy:  0.7896851975887474
+Validation accuracy:  0.8065522620904836
+
+SVM
+Train accuracy:  0.7930341594105828
+Validation accuracy:  0.7769110764430577
+
+SVM
+Train accuracy:  0.7896851975887474
+Validation accuracy:  0.7987519500780031
+
+SVM
+Train accuracy:  0.8037508372404555
+Validation accuracy:  0.7722308892355694
+
+SVM
+Train accuracy:  0.7896851975887474
+Validation accuracy:  0.7987519500780031
+
+SVM
+Train accuracy:  0.8024112525117214
+Validation accuracy:  0.7706708268330733
+
+SVM
+Train accuracy:  0.7903549899531145
+Validation accuracy:  0.7925117004680188
+
+SVM
+Train accuracy:  0.7736101808439384
+Validation accuracy:  0.828393135725429
+
+SVM
+Train accuracy:  0.7890154052243804
+Validation accuracy:  0.7956318252730109
+
+SVM
+Train accuracy:  0.7930341594105828
+Validation accuracy:  0.7753510140405616
+
+SVM
+Train accuracy:  0.7782987273945077
+Validation accuracy:  0.8252730109204368
+
+SVM
+Train accuracy:  0.7943737441393168
+Validation accuracy:  0.7925117004680188
+
+SVM
+Train accuracy:  0.7883456128600134
+Validation accuracy:  0.7925117004680188
+
+SVM
+Train accuracy:  0.8017414601473544
+Validation accuracy:  0.7519500780031201
+
+SVM
+Train accuracy:  0.8004018754186202
+Validation accuracy:  0.7675507020280812
+
+SVM
+Train accuracy:  0.7863362357669123
+Validation accuracy:  0.7987519500780031
+
+SVM
+Train accuracy:  0.797722705961152
+Validation accuracy:  0.7769110764430577
+
+SVM
+Train accuracy:  0.7896851975887474
+Validation accuracy:  0.8081123244929798
+
+SVM
+Train accuracy:  0.7950435365036839
+Validation accuracy:  0.7862714508580343
+
+SVM
+Train accuracy:  0.7876758204956463
+Validation accuracy:  0.8003120124804992
+
+SVM
+Train accuracy:  0.7957133288680509
+Validation accuracy:  0.7784711388455539
+
+SVM
+Train accuracy:  0.7916945746818487
+Validation accuracy:  0.8003120124804992
+
+SVM
+Train accuracy:  0.7829872739450771
+Validation accuracy:  0.8065522620904836
+
+SVM
+Train accuracy:  0.7930341594105828
+Validation accuracy:  0.7940717628705148
+
+SVM
+Train accuracy:  0.796383121232418
+Validation accuracy:  0.7925117004680188
+
+SVM
+Train accuracy:  0.7883456128600134
+Validation accuracy:  0.7831513260530422
+
+SVM
+Train accuracy:  0.797722705961152
+Validation accuracy:  0.7893915756630265
+
+SVM
+Train accuracy:  0.8050904219691896
+Validation accuracy:  0.7675507020280812
+
+SVM
+Train accuracy:  0.797722705961152
+Validation accuracy:  0.7722308892355694
+
+SVM
+Train accuracy:  0.7890154052243804
+Validation accuracy:  0.7909516380655226
+
+SVM
+Train accuracy:  0.7883456128600134
+Validation accuracy:  0.7925117004680188
+
+SVM
+Train accuracy:  0.796383121232418
+Validation accuracy:  0.7769110764430577
+
+SVM
+Train accuracy:  0.7910247823174816
+Validation accuracy:  0.7956318252730109
