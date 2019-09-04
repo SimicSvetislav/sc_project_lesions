@@ -3,8 +3,7 @@ Projekat iz predmeta Soft kompjuting čija je tema klasifikacija mladeža na osn
 
 Grana sa postavkom za generisanje exe fajla.
 Potrebno je imati instaliran paket pyinstaller. To je moguće uraditi pomoću pip-a: `pip install pyinstaller`  
-Zatim je potrebno generisati izvršni fajl:  
-`pyinstaller --hidden-import pywt._extensions._cwt main.py`
+Zatim je potrebno generisati izvršni fajl: `pyinstaller --hidden-import pywt._extensions._cwt main.py`
 
 Izvršni fajl se nalazi na putanji sc_project_lesions/dist/main/main.exe
 
