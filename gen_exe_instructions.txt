@@ -1,0 +1,3 @@
+pip install pyinstaller
+
+pyinstaller --hidden-import pywt._extensions._cwt main.py
