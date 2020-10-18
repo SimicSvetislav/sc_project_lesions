@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import matplotlib
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 import segmentation as sg
 import importlib
@@ -63,8 +63,8 @@ def asymmertryString(img):
     
     return asymmetry(img_a)
 
-def asymmetry_pipe(original_image, contour):
-    
+def asymmetry_pipe(original_image, contour, A=None):
+      
     lesion_binary = np.zeros(original_image.shape, np.uint8)
     lesion_binary = cv2.cvtColor(lesion_binary, cv2.COLOR_BGR2GRAY)
     

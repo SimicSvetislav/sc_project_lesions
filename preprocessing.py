@@ -31,9 +31,16 @@ def preprocess(img):
     
     img_ip_gray = cv2.inpaint(img_copy_gray,img_bin_mask_inv,3,cv2.INPAINT_TELEA)
     
+    img_copy_orig = img
+    img_copy_orig[img_bin_mask==0] = 0
+    
+    img_ip = cv2.inpaint(img_copy_orig, img_bin_mask_inv, 3, cv2.INPAINT_TELEA)
+    
     ksize = 15
 
     img_final_g = cv2.medianBlur(img_ip_gray, ksize)
+    img_final_color = cv2.medianBlur(img_ip, ksize)
+    # img_final_g = cv2.GaussianBlur(img_ip_gray, ksize, 0)
     
     # Abonded
     #img_final_eq = cv2.equalizeHist(img_final_g)
@@ -43,7 +50,7 @@ def preprocess(img):
     #res = np.hstack((img_final_g,img_final_eq))
     #plt.imshow(res, 'gray')
     
-    return img_final_g    
+    return img_final_g, img_final_color    
 
 def preprocessString(image):
     img = cv2.imread(image)

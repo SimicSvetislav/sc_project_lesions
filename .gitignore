@@ -108,3 +108,26 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Images
+*.png
+
+# Trained model
+trained_model.h5
+
+# Data
+data/
+filtered/
+final/
+full/
+
+# Bottleneck features
+bottleneck_features_train.npy
+bottleneck_features_valid.npy
+
+# Model architecture
+new_model.json
+
+# Console output
+output_modified_dense_layers_100_epochs.txt
+output_modified_last_layer_100_epochs.txt

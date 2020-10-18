@@ -31,7 +31,7 @@ def border_feature_string(image):
     
     return border_feature(img)
 
-def border_pipe(in_contour):
+def border_pipe(in_contour, B=None):
       
     hull = cv2.convexHull(in_contour, returnPoints=True)
     

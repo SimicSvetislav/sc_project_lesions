@@ -9,7 +9,7 @@ def segment(img):
     
     importlib.reload(pp)
     
-    out = pp.preprocess(img)
+    out,_ = pp.preprocess(np.copy(img))
     
     ret, img_bin = cv2.threshold(out, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     
@@ -29,7 +29,7 @@ def segment_pipe(img):
     
     ret, img_bin = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     
-    contours, hierarchy = cv2.findContours(img_bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(img_bin, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
     largestContour = max(contours, key = cv2.contourArea)
     

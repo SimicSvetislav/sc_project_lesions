@@ -28,7 +28,7 @@ def color_feature(img_c):
     
     return (stddev[0] + stddev[1] + stddev[2])/3;
     
-def color_pipe(original_image, contour):
+def color_pipe(original_image, contour, C=None):
     
     color_mask = np.zeros(original_image.shape, np.uint8)
     color_mask = cv2.cvtColor(color_mask, cv2.COLOR_BGR2GRAY)
@@ -49,5 +49,6 @@ def color_pipe(original_image, contour):
     stddev = np.std(contour_pixels, axis=0)
     
     C = (stddev[0] + stddev[1] + stddev[2])/3
+    # C = 0.21*stddev[0] + 0.72*stddev[1] + 0.07*stddev[2]
     
     return C;
